@@ -1,16 +1,24 @@
 # sign_pad_app
 
-A new Flutter project.
+A signature pad allows users to digitally sign documents by drawing their signature on a touch screen, providing a secure and paperless way to capture consent.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Add path_provider to pubspec.yaml:
 
-A few resources to get you started if this is your first Flutter project:
+dependencies:
+  path_provider: ^2.1.4   # latest stable
+  
+Import it at the top of your file:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_signaturepad/signaturepad.dart';
+import 'dart:ui' as ui;
+import 'dart:typed_data';
+import 'dart:io';
+import 'package:path_provider/path_provider.dart';
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Output
+
+<img width="1080" height="2340" alt="image" src="https://github.com/user-attachments/assets/61ccb777-6d41-41ad-8b06-4ea07ab9117d" />
+
